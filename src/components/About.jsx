@@ -1,3 +1,5 @@
+import SectionHeader from './SectionHeader'
+
 const stats = [
   { num: '6+', desc: 'Años de experiencia profesional' },
   { num: '3',  desc: 'Empresas de referencia' },
@@ -11,10 +13,10 @@ export default function About() {
       <div className="section-inner">
         <div className="about-grid">
           <div className="about-text">
-            <div className="section-label">Sobre mí</div>
-            <h2 className="section-title">
-              Desarrollador<br />con visión de producto
-            </h2>
+            <SectionHeader
+              label="Sobre mí"
+              title={<>Desarrollador<br />con visión de producto</>}
+            />
             <p>
               Soy un <strong>Full Stack Developer</strong> con sede en Madrid,
               con más de 6 años de experiencia construyendo aplicaciones web de

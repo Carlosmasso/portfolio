@@ -1,4 +1,5 @@
 import useScrollReveal from '../hooks/useScrollReveal'
+import SectionHeader from './SectionHeader'
 
 const categories = [
   {
@@ -46,10 +47,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="section-inner">
-        <div className="section-label">Tecnologías</div>
-        <h2 className="section-title">
-          Stack &amp;<br />herramientas
-        </h2>
+        <SectionHeader label="Tecnologías" title={<>Stack &amp;<br />herramientas</>} />
         <div className="skills-grid">
           {categories.map((cat, i) => (
             <SkillCard key={cat.title} cat={cat} delay={(i % 4) * 80} />

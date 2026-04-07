@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="hero-bg-blob2" />
 
       <div className="hero-inner">
-        <div className="hero-tag">Full Stack Developer · Madrid</div>
+        <div className="hero-tag">Full Stack Developer</div>
         <h1 className="hero-name">
           Carlos<br /><em>Massó</em>
         </h1>
@@ -19,11 +19,6 @@ export default function Hero() {
           <a href="#experience" className="btn btn-primary">Ver experiencia</a>
           <a href="#contact" className="btn btn-outline">Contactar</a>
         </div>
-      </div>
-
-      <div className="hero-scroll-hint">
-        <div className="scroll-line" />
-        Scroll
       </div>
     </section>
   )

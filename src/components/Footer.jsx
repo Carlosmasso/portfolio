@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
     <footer>
-      <p>© 2026 Carlos Massó — Diseñado y desarrollado con amor</p>
+      <div className="footer-inner">
+        <p>Carlos Massó © 2026</p>
+      </div>
     </footer>
   )
 }

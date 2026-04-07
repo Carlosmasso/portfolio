@@ -1,4 +1,5 @@
 import useScrollReveal from '../hooks/useScrollReveal'
+import SectionHeader from './SectionHeader'
 
 const jobs = [
   {
@@ -56,10 +57,7 @@ export default function Experience() {
   return (
     <section id="experience">
       <div className="section-inner">
-        <div className="section-label">Trayectoria</div>
-        <h2 className="section-title">
-          Experiencia<br />profesional
-        </h2>
+        <SectionHeader label="Trayectoria" title={<>Experiencia<br />profesional</>} />
         <div className="timeline">
           {jobs.map((job, i) => (
             <TimelineItem key={job.company} job={job} delay={i * 80} />

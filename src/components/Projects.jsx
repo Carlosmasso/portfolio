@@ -1,4 +1,5 @@
 import useScrollReveal from '../hooks/useScrollReveal'
+import SectionHeader from './SectionHeader'
 
 const projects = [
   {
@@ -25,7 +26,7 @@ function ProjectCard({ project, delay }) {
       <div className="project-body">
         <h3 className="project-title">{project.title}</h3>
         <p className="project-desc">{project.description}</p>
-        <div className="skill-tags" style={{ marginTop: '1.2rem' }}>
+        <div className="skill-tags">
           {project.tags.map((tag) => (
             <span className="tag" key={tag}>{tag}</span>
           ))}
@@ -49,10 +50,7 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="section-inner">
-        <div className="section-label">Trabajo</div>
-        <h2 className="section-title">
-          Proyectos
-        </h2>
+        <SectionHeader label="Trabajo" title="Proyectos" />
         <div className="projects-grid">
           {projects.map((project, i) => (
             <ProjectCard key={project.title} project={project} delay={i * 100} />

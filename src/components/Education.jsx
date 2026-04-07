@@ -1,4 +1,5 @@
 import useScrollReveal from '../hooks/useScrollReveal'
+import SectionHeader from './SectionHeader'
 
 export default function Education() {
   const ref = useScrollReveal()
@@ -6,8 +7,7 @@ export default function Education() {
   return (
     <section id="education">
       <div className="section-inner">
-        <div className="section-label">Formación</div>
-        <h2 className="section-title">Educación</h2>
+        <SectionHeader label="Formación" title="Educación" />
         <div className="edu-card" ref={ref}>
           <div>
             <div className="edu-period">2014 — 2019</div>
