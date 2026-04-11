@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 const links = [
   {
     label: "GitHub",
-    href: "https://github.com/manubermu",
+    href: "https://github.com/carlosmasso",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
