@@ -35,20 +35,29 @@ const jobs = [
   },
 ]
 
-function TimelineItem({ job, delay }) {
+function TimelineItem({ job, delay, isActive }) {
   const ref = useScrollReveal(delay)
 
   return (
-    <div className="timeline-item" ref={ref}>
+    <div className={`timeline-item${isActive ? ' timeline-item--active' : ''}`} ref={ref}>
       <div className="timeline-dot" />
-      <div className="timeline-period">{job.period}</div>
-      <div className="timeline-company">{job.company}</div>
-      <div className="timeline-role">{job.role}</div>
-      <ul className="timeline-points">
-        {job.points.map((point, i) => (
-          <li key={i}>{point}</li>
-        ))}
-      </ul>
+      <div className="timeline-card">
+        <div className="timeline-header">
+          <div className="timeline-meta">
+            <span className="timeline-period">
+              {isActive && <span className="timeline-badge" />}
+              {job.period}
+            </span>
+            <div className="timeline-company">{job.company}</div>
+            <div className="timeline-role">{job.role}</div>
+          </div>
+        </div>
+        <ul className="timeline-points">
+          {job.points.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }
@@ -60,7 +69,7 @@ export default function Experience() {
         <SectionHeader label="Trayectoria" title={<>Experiencia<br />profesional</>} />
         <div className="timeline">
           {jobs.map((job, i) => (
-            <TimelineItem key={job.company} job={job} delay={i * 80} />
+            <TimelineItem key={job.company} job={job} delay={i * 100} isActive={i === 0} />
           ))}
         </div>
       </div>

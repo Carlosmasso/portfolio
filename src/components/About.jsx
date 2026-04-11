@@ -1,21 +1,25 @@
+import useScrollReveal from '../hooks/useScrollReveal'
 import SectionHeader from './SectionHeader'
 
 const stats = [
-  { num: '6+', desc: 'Años de experiencia profesional' },
+  { num: '6+', desc: 'Años de experiencia' },
   { num: '3',  desc: 'Empresas de referencia' },
-  { num: '∞',  desc: 'Componentes y APIs construidas' },
-  { num: '1',  desc: 'Pasión: el código que importa' },
+  { num: '∞',  desc: 'Componentes y APIs' },
+  { num: '1',  desc: 'Pasión: el código' },
 ]
 
 export default function About() {
+  const textRef = useScrollReveal(0)
+  const statsRef = useScrollReveal(120)
+
   return (
     <section id="about">
       <div className="section-inner">
         <div className="about-grid">
-          <div className="about-text">
+          <div className="about-text reveal" ref={textRef}>
             <SectionHeader
               label="Sobre mí"
-              title={<>Desarrollador<br />con visión de producto</>}
+              title={<>Desarrollador<br />con visión<br className="about-br" /> de producto</>}
             />
             <p>
               Soy un <strong>Full Stack Developer</strong> con sede en Madrid,
@@ -35,7 +39,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="about-stats">
+          <div className="about-stats reveal" ref={statsRef}>
             {stats.map((s) => (
               <div className="stat-card" key={s.num}>
                 <div className="stat-num">{s.num}</div>
