@@ -1,4 +1,3 @@
-import Cursor from './components/Cursor'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -12,7 +11,6 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
-      <Cursor />
       <Nav />
       <Hero />
       <About />
