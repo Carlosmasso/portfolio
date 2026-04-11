@@ -2,10 +2,10 @@ import useScrollReveal from '../hooks/useScrollReveal'
 import SectionHeader from './SectionHeader'
 
 const stats = [
-  { num: '6+', desc: 'Años de experiencia' },
-  { num: '3',  desc: 'Empresas de referencia' },
-  { num: '∞',  desc: 'Componentes y APIs' },
-  { num: '1',  desc: 'Pasión: el código' },
+  { num: '6+', desc: 'años de experiencia' },
+  { num: '3', desc: 'empresas' },
+  { num: '∞', desc: 'componentes' },
+  { num: '1', desc: 'pasión: el código' },
 ]
 
 export default function About() {
@@ -18,8 +18,8 @@ export default function About() {
         <div className="about-grid">
           <div className="about-text reveal" ref={textRef}>
             <SectionHeader
-              label="Sobre mí"
-              title={<>Desarrollador<br />con visión<br className="about-br" /> de producto</>}
+              label="about.md"
+              title={<>Desarrollador con<br className="about-br" /> visión de producto</>}
             />
             <p>
               Soy un <strong>Full Stack Developer</strong> con sede en Madrid,
@@ -30,8 +30,7 @@ export default function About() {
             <p>
               Actualmente en <strong>Allfunds</strong> como Senior Frontend
               Lead, liderando equipos y marcando el estándar de calidad en
-              arquitectura escalable. Tengo un enfoque pragmático: entrego,
-              itero y mejoro.
+              arquitectura escalable. Enfoque pragmático: entrego, itero y mejoro.
             </p>
             <p>
               Inglés <strong>B2</strong> — cómodo en entornos internacionales

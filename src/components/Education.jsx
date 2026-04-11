@@ -7,13 +7,13 @@ export default function Education() {
   return (
     <section id="education">
       <div className="section-inner">
-        <SectionHeader label="Formación" title="Educación" />
+        <SectionHeader label="credentials" title="Educación" />
         <div className="edu-card" ref={ref}>
           <div>
             <div className="edu-period">2014 — 2019</div>
             <div className="edu-degree">Grado en Ingeniería Informática</div>
             <div className="edu-project">
-              Proyecto Fin de Grado:{' '}
+              TFG:{' '}
               <strong>Diseño e implementación de un algoritmo de enrutamiento</strong>
             </div>
           </div>

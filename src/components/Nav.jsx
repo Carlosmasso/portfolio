@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 
 export default function Nav() {
-  const [isDark, setIsDark] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -11,13 +10,6 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const toggleTheme = () => {
-    const next = !isDark
-    setIsDark(next)
-    document.documentElement.setAttribute('data-theme', next ? 'dark' : '')
-    if (!next) document.documentElement.removeAttribute('data-theme')
-  }
-
   const closeMenu = () => setMenuOpen(false)
 
   return (
@@ -25,24 +17,17 @@ export default function Nav() {
       <nav className={scrolled ? 'scrolled' : ''}>
         <div className="nav-inner">
           <a href="#hero" className="nav-logo">
-            CM<span>.</span>
+            carlos<span>@</span>dev<span>:</span>~<span>$</span>
           </a>
           <ul className="nav-links">
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#education">Educación</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
           <div className="nav-actions">
-            <button
-              className={`theme-toggle${isDark ? ' dark' : ''}`}
-              onClick={toggleTheme}
-              aria-label="Cambiar tema"
-            >
-              <span className="toggle-thumb" />
-            </button>
             <button
               className={`burger${menuOpen ? ' open' : ''}`}
               onClick={() => setMenuOpen(o => !o)}
@@ -56,12 +41,12 @@ export default function Nav() {
 
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
         <ul>
-          <li><a href="#about" onClick={closeMenu}>Sobre mí</a></li>
-          <li><a href="#experience" onClick={closeMenu}>Experiencia</a></li>
-          <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
-          <li><a href="#projects" onClick={closeMenu}>Proyectos</a></li>
-          <li><a href="#education" onClick={closeMenu}>Educación</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contacto</a></li>
+          <li><a href="#about" onClick={closeMenu}>about</a></li>
+          <li><a href="#experience" onClick={closeMenu}>experience</a></li>
+          <li><a href="#skills" onClick={closeMenu}>skills</a></li>
+          <li><a href="#projects" onClick={closeMenu}>projects</a></li>
+          <li><a href="#education" onClick={closeMenu}>education</a></li>
+          <li><a href="#contact" onClick={closeMenu}>contact</a></li>
         </ul>
       </div>
     </>

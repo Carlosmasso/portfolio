@@ -4,26 +4,26 @@ import SectionHeader from './SectionHeader'
 const categories = [
   {
     title: 'Frontend',
-    tags: ['ReactJS', 'Redux', 'JavaScript (ES6+)', 'CSS / SCSS', 'HTML5', 'Responsive Design'],
+    tags: ['ReactJS', 'Redux', 'JavaScript', 'CSS/SCSS', 'HTML5', 'Responsive'],
   },
   {
     title: 'Backend',
     tags: ['Ruby on Rails', 'Java', 'Python', 'REST APIs'],
   },
   {
-    title: 'Bases de datos',
+    title: 'Databases',
     tags: ['MariaDB', 'MySQL', 'PostgreSQL'],
   },
   {
-    title: 'DevOps & Workflow',
-    tags: ['Git', 'GitHub', 'Code Review', 'Agile / Scrum'],
+    title: 'DevOps',
+    tags: ['Git', 'GitHub', 'Code Review', 'Agile/Scrum'],
   },
   {
-    title: 'Liderazgo',
-    tags: ['Tech Lead', 'Mentoring', 'Arquitectura escalable', 'Estándares de calidad'],
+    title: 'Leadership',
+    tags: ['Tech Lead', 'Mentoring', 'Arquitectura', 'Quality Standards'],
   },
   {
-    title: 'Idiomas',
+    title: 'Languages',
     tags: ['Español — Nativo', 'Inglés — B2'],
   },
 ]
@@ -47,10 +47,10 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="section-inner">
-        <SectionHeader label="Tecnologías" title={<>Stack &amp;<br />herramientas</>} />
+        <SectionHeader label="package.json" title={<>Stack &amp;<br />herramientas</>} />
         <div className="skills-grid">
           {categories.map((cat, i) => (
-            <SkillCard key={cat.title} cat={cat} delay={(i % 4) * 80} />
+            <SkillCard key={cat.title} cat={cat} delay={(i % 3) * 60} />
           ))}
         </div>
       </div>

@@ -1,5 +1,5 @@
 /**
- * SectionHeader — reusable label + title pattern for all sections.
+ * SectionHeader — terminal-style comment + title for sections.
  */
 export default function SectionHeader({ label, title, center = false }) {
   return (
