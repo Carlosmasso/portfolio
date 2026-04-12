@@ -1344,8 +1344,7 @@ footer {
     border-left: none;
   }
   footer {
-    padding-left: var(--space-md);
-    padding-right: var(--space-md);
+    padding: var(--space-md);
   }
 }
 
