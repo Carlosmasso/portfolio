@@ -5,7 +5,7 @@ const stats = [
   { num: '6+', desc: 'años de experiencia' },
   { num: '3', desc: 'empresas' },
   { num: '∞', desc: 'componentes' },
-  { num: '1', desc: 'pasión: el código' },
+  { num: '1', desc: 'pasión por el código' },
 ]
 
 export default function About() {

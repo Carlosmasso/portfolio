@@ -10,7 +10,7 @@ export default function Hero() {
           <span className="keyword">const </span>
           <span className="string">role</span>
           <span className="comment"> = </span>
-          <span className="string">"Full Stack Developer"</span>
+          <span className="string">"Software Engineer"</span>
         </div>
         <h1 className="hero-name">
           Carlos <span className="accent">Massó</span>

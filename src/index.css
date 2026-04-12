@@ -777,7 +777,7 @@ section {
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--space-sm);
 }
 .skill-category {
@@ -1281,7 +1281,6 @@ footer {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    margin: 0 calc(-1 * var(--space-md));
     padding: 0 var(--space-md) var(--space-sm);
     scrollbar-width: none;
   }
