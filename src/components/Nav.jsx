@@ -1,25 +1,15 @@
 import { useState, useEffect } from 'react'
 
 export default function Nav() {
-  const [isDark, setIsDark] = useState(true)
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  console.log({menuOpen})
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
-
-  const toggleTheme = () => {
-    const next = !isDark
-    setIsDark(next)
-    if (next) {
-      document.documentElement.removeAttribute('data-theme')
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light')
-    }
-  }
 
   const closeMenu = () => setMenuOpen(false)
 
@@ -39,14 +29,6 @@ export default function Nav() {
             <li><a href="#contact">contact</a></li>
           </ul>
           <div className="nav-actions">
-            <button
-              className="theme-toggle"
-              onClick={toggleTheme}
-              aria-label="Cambiar tema"
-              title={isDark ? 'Modo claro' : 'Modo oscuro'}
-            >
-              {isDark ? '☀' : '☾'}
-            </button>
             <button
               className={`burger${menuOpen ? ' open' : ''}`}
               onClick={() => setMenuOpen(o => !o)}
