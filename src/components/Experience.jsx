@@ -8,7 +8,7 @@ const jobs = [
     role: 'Senior Frontend Lead',
     points: [
       'Liderazgo técnico del equipo frontend: mentoring, code reviews y estándares de calidad.',
-      'Arquitecturas frontend escalables con ReactJS y Redux.',
+      'Arquitecturas frontend escalables con ReactJS.',
       'Desarrollo full-stack con Ruby on Rails e integración con APIs REST.',
       'Ciclo completo del producto web: UI → despliegue en producción.',
       'Optimización de UX y rendimiento en plataformas de alto tráfico.',
