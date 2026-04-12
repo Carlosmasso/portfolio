@@ -9,7 +9,7 @@ export default function Education() {
       <div className="section-inner">
         <SectionHeader label="credentials" title="Educación" />
         <div className="edu-card" ref={ref}>
-          <div>
+          <div className="edu-body">
             <div className="edu-period">2014 — 2019</div>
             <div className="edu-degree">Grado en Ingeniería Informática</div>
             <div className="edu-project">
