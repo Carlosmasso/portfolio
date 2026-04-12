@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
         <p className="hero-desc">
           <TypingText
-            text="Construyo productos digitales de alto rendimiento. Especializado en arquitecturas frontend modernas con React y backend robusto con Ruby on Rails, Java y Python."
+            text="Desarrollador Full Stack especializado en React y Ruby, enfocado en la creación de aplicaciones web escalables, eficientes y bien estructuradas, con especial atención a la calidad del código y las buenas prácticas."
             speed={25}
             delay={800}
           />
