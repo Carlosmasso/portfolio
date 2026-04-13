@@ -43,8 +43,8 @@ export default function Contact() {
           center
         />
         <p className="contact-sub">
-          Estoy abierto a nuevas oportunidades, colaboraciones y proyectos
-          interesantes. No dudes en escribirme.
+          Abierto a nuevas oportunidades, colaboraciones y proyectos
+          interesantes.
         </p>
         <a href="mailto:carlos.masso@hotmail.com" className="btn btn-primary">
           $ send_email

@@ -629,7 +629,6 @@ section {
 .stat-card:hover {
   border-color: var(--green);
   box-shadow: var(--shadow-card);
-  transform: translateY(-2px);
 }
 .stat-num {
   font-size: 28px;
