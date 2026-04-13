@@ -25,6 +25,13 @@ export default function Hero() {
         <div className="hero-ctas">
           <a href="#experience" className="btn btn-primary">$ view_experience</a>
           <a href="#contact" className="btn btn-outline">$ contact →</a>
+          <a
+            href="/CV_Carlos_Masso.pdf"
+            download="CV_Carlos_Masso.pdf"
+            className="btn btn-outline"
+          >
+            ↓ download_cv.pdf
+          </a>
         </div>
       </div>
     </section>
