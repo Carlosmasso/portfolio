@@ -1262,7 +1262,7 @@ footer {
     padding: var(--space-2xl) var(--space-md);
   }
   #hero {
-    padding: var(--space-4xl) max(8px, 4vw) var(--space-2xl);
+    padding: var(--space-3xl) max(8px, 4vw) var(--space-2xl);
   }
   .hero-name {
     font-size: clamp(24px, 10vw, 36px);
