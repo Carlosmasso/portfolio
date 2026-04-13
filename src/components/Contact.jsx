@@ -39,12 +39,11 @@ export default function Contact() {
       <div className="contact-inner" ref={ref}>
         <SectionHeader
           label="ping"
-          title={<>¿Tienes un proyecto<br />en mente?</>}
+          title={<>Do you have a project<br />in mind?</>}
           center
         />
         <p className="contact-sub">
-          Abierto a nuevas oportunidades, colaboraciones y proyectos
-          interesantes.
+          Open to new opportunities, collaborations, and interesting projects.
         </p>
         <a href="mailto:carlos.masso@hotmail.com" className="btn btn-primary">
           $ send_email

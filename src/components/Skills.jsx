@@ -20,11 +20,11 @@ const categories = [
   },
   {
     title: 'Leadership',
-    tags: ['Tech Lead', 'Mentoring', 'Arquitectura', 'Quality Standards'],
+    tags: ['Tech Lead', 'Mentoring', 'Architecture', 'Quality Standards'],
   },
   {
     title: 'Languages',
-    tags: ['Español — Nativo', 'Inglés — B2'],
+    tags: ['Spanish — Native', 'English — C1'],
   },
 ]
 
@@ -47,7 +47,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="section-inner">
-        <SectionHeader label="package.json" title={<>Stack &amp;<br />herramientas</>} />
+        <SectionHeader label="package.json" title={<>Stack &amp;<br />tools</>} />
         <div className="skills-grid">
           {categories.map((cat, i) => (
             <SkillCard key={cat.title} cat={cat} delay={(i % 3) * 60} />

@@ -6,7 +6,7 @@ const projects = [
     title: 'Awayna',
     file: 'awayna.tsx',
     description:
-      'Plataforma de viajes enfocada en turismo local y cercano. Conecta viajeros con experiencias auténticas y destinos próximos.',
+      'Travel platform focused on local and nearby tourism. Connects travelers with authentic experiences and close destinations.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     link: 'https://www.awayna.es/',
   },
@@ -14,7 +14,7 @@ const projects = [
     title: 'Portfolio',
     file: 'portfolio.jsx',
     description:
-      'Este portfolio. Diseñado y desarrollado desde cero con React + Vite, enfocado en rendimiento y estética developer.',
+      'This portfolio. Designed and developed from scratch with React + Vite, focused on performance and developer aesthetics.',
     tags: ['React', 'Vite', 'CSS'],
     link: null,
   },
@@ -62,7 +62,7 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="section-inner">
-        <SectionHeader label="repos" title="Proyectos" />
+        <SectionHeader label="repos" title="Projects" />
         <div className="projects-grid">
           {projects.map((project, i) => (
             <ProjectCard key={project.title} project={project} delay={i * 100} />

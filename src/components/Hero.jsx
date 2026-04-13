@@ -10,21 +10,21 @@ export default function Hero() {
           <span className="keyword">const </span>
           <span className="string">role</span>
           <span className="comment"> = </span>
-          <span className="string">"Software Engineer"</span>
+          <span className="string">"Full Stack Developer"</span>
         </div>
         <h1 className="hero-name">
           Carlos <span className="accent">Massó</span>
         </h1>
         <p className="hero-desc">
           <TypingText
-            text="Desarrollador Full Stack especializado en React y Ruby, enfocado en la creación de aplicaciones web escalables, eficientes y bien estructuradas, con especial atención a la calidad del código y las buenas prácticas."
+            text="Full Stack Developer specialized in React and Ruby, focused on building scalable, efficient, and well-structured web applications, with special attention to code quality and best practices."
             speed={25}
             delay={800}
           />
         </p>
         <div className="hero-ctas">
-          <a href="#experience" className="btn btn-primary">$ ver_experiencia</a>
-          <a href="#contact" className="btn btn-outline">$ contactar →</a>
+          <a href="#experience" className="btn btn-primary">$ view_experience</a>
+          <a href="#contact" className="btn btn-outline">$ contact →</a>
         </div>
       </div>
     </section>

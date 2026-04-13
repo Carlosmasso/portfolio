@@ -3,34 +3,34 @@ import SectionHeader from './SectionHeader'
 
 const jobs = [
   {
-    period: 'Abril 2022 — Actualidad',
+    period: 'April 2022 — Present',
     company: 'Allfunds',
     role: 'Senior Frontend Lead',
     points: [
-      'Liderazgo técnico del equipo frontend: mentoring, code reviews y estándares de calidad.',
-      'Arquitecturas frontend escalables con ReactJS.',
-      'Desarrollo full-stack con Ruby on Rails e integración con GraphQL.',
-      'Ciclo completo del producto web: UI → despliegue en producción.',
-      'Optimización de UX y rendimiento en plataformas de alto tráfico.',
+      'Technical leadership of the frontend team: mentoring, code reviews, and quality standards.',
+      'Scalable frontend architectures with ReactJS.',
+      'Full-stack development with Ruby on Rails and GraphQL integration.',
+      'Full product lifecycle: UI → production deployment.',
+      'UX and performance optimization for high-traffic platforms.',
     ],
   },
   {
-    period: 'Agosto 2021 — Abril 2022',
+    period: 'August 2021 — April 2022',
     company: 'Capgemini',
     role: 'Full Stack Developer',
     points: [
-      'Desarrollo e integración de interfaces frontend en proyectos de cliente.',
-      'Implementación de soluciones backend en entornos empresariales.',
+      'Frontend interface development and integration for client projects.',
+      'Backend solution implementation in enterprise environments.',
     ],
   },
   {
-    period: 'Abril 2019 — Agosto 2021',
+    period: 'April 2019 — August 2021',
     company: 'Teldat',
     role: 'Full Stack Developer',
     points: [
-      'Diseño de interacciones de usuario y arquitectura frontend completa.',
-      'Desarrollo backend y diseño de APIs RESTful.',
-      'Mantenimiento evolutivo y correctivo del sistema de software.',
+      'User interaction design and complete frontend architecture.',
+      'Backend development and RESTful API design.',
+      'Evolutionary and corrective maintenance of the software system.',
     ],
   },
 ]
@@ -64,7 +64,7 @@ export default function Experience() {
   return (
     <section id="experience">
       <div className="section-inner">
-        <SectionHeader label="git log" title={<>Experiencia<br />profesional</>} />
+        <SectionHeader label="git log" title={<>Professional<br />experience</>} />
         <div className="timeline">
           {jobs.map((job, i) => (
             <TimelineItem key={job.company} job={job} delay={i * 100} isActive={i === 0} />

@@ -2,10 +2,10 @@ import useScrollReveal from '../hooks/useScrollReveal'
 import SectionHeader from './SectionHeader'
 
 const stats = [
-  { num: '6+', desc: 'años de experiencia' },
-  { num: '3', desc: 'empresas' },
-  { num: '∞', desc: 'componentes' },
-  { num: '1', desc: 'pasión por el código' },
+  { num: '6+', desc: 'years of experience' },
+  { num: '3', desc: 'companies' },
+  { num: '∞', desc: 'components' },
+  { num: '1', desc: 'passion for code' },
 ]
 
 export default function About() {
@@ -19,22 +19,22 @@ export default function About() {
           <div className="about-text reveal" ref={textRef}>
             <SectionHeader
               label="about.md"
-              title={<>Desarrollador con<br className="about-br" /> visión de producto</>}
+              title={<>Developer with<br className="about-br" /> product vision</>}
             />
             <p>
-              Soy un <strong>Full Stack Developer</strong> con sede en Madrid,
-              con más de 6 años de experiencia construyendo aplicaciones web de
-              principio a fin. Me apasiona tanto la experiencia de usuario como
-              la solidez del código que hay detrás.
+              I am a <strong>Full Stack Developer</strong> based in Madrid,
+              with over 6 years of experience building web applications from
+              start to finish. I am passionate about both user experience and
+              the robustness of the code behind it.
             </p>
             <p>
-              Actualmente en <strong>Allfunds</strong> como Senior Frontend
-              Lead, liderando equipos y marcando el estándar de calidad en
-              arquitectura escalable. Enfoque pragmático: entrego, itero y mejoro.
+              Currently at <strong>Allfunds</strong> as Senior Frontend
+              Lead, leading teams and setting the quality standard in scalable
+              architecture. Pragmatic approach: deliver, iterate, and improve.
             </p>
             <p>
-              Inglés <strong>B2</strong> — cómodo en entornos internacionales
-              y equipos distribuidos.
+              English <strong>B2</strong> — comfortable in international
+              environments and distributed teams.
             </p>
           </div>
 
