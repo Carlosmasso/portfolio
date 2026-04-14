@@ -24,7 +24,7 @@ const categories = [
   },
   {
     title: 'Languages',
-    tags: ['Spanish — Native', 'English — C1'],
+    tags: ['Spanish — Native', 'English — B2'],
   },
 ]
 
